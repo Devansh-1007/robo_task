@@ -4,7 +4,7 @@ import { Input } from '@material-tailwind/react';
 function Weather() {
     const [weather, setWeather] = useState([]);
     const [location, setLocation] = useState('');
-    const url = `http://api.weatherapi.com/v1/current.json?key=d3e38e253ccd402881c70238231701&q=${location}`
+    const url = `https://api.weatherapi.com/v1/current.json?key=d3e38e253ccd402881c70238231701&q=${location}`
     const getWeather =  (e) => {
 
          axios.get(url)
