@@ -5,9 +5,9 @@ function Weather() {
     const [weather, setWeather] = useState([]);
     const [location, setLocation] = useState('');
     const url = `http://api.weatherapi.com/v1/current.json?key=d3e38e253ccd402881c70238231701&q=${location}`
-    const getWeather = async (e) => {
+    const getWeather =  (e) => {
 
-        await axios.get(url)
+         axios.get(url)
             .then((res) => {
                 setWeather(res.data)
                 console.log(weather)
